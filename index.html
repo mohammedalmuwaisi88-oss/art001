@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Art | لوحات فنية مؤطرة فاخرة</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">AURA <span>ART</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">الرئيسية</a></li>
+        <li><a href="products.html">جميع اللوحات</a></li>
+        <li><a href="custom-design.html">صمم لوحتك</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="products.html" title="بحث"><i class="fas fa-search"></i></a>
+        <a href="account.html" title="حسابي"><i class="fas fa-user"></i></a>
+        <a href="cart.html" title="السلة"><i class="fas fa-shopping-bag"></i><span class="badge-count" id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- الواجهة الرئيسية Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>حوّل جدرانك إلى حكاية من الفن</h1>
+      <p>نقدم لك لوحات مختارة بعناية وإطارات عالية الجودة تناسب مختلف المساحات وتضفي فخامة على منزلك.</p>
+      <div>
+        <a href="products.html" class="btn btn-primary">اكتشف المجموعة</a>
+        <a href="custom-design.html" class="btn btn-outline">صمم لوحتك الخاصة</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- المنتجات المميزة -->
+  <section>
+    <h2 class="section-title">المنتجات <span>المميزة</span></h2>
+    <div class="products-grid" id="featured-products">
+      <!-- يتم تحميل المنتجات ديناميكياً من Supabase لاحقاً -->
+      <div class="product-card">
+        <img src="assets/images/sample-art.jpg" alt="لوحة تجريدية" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">أفق ذهبي صامت</h3>
+          <div class="product-price">45.000 ر.ع</div>
+          <a href="product-details.html?id=1" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">عرض التفاصيل</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>AURA ART</h3>
+        <p>وجهتك الأولى للوحات الفنية المؤطرة المصنوعة بعناية فائقة لتلائم أصحاب الذوق الرفيع في سلطنة عمان وخارجها.</p>
+      </div>
+      <div class="footer-col">
+        <h3>روابط سريعة</h3>
+        <ul>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="products.html">اللوحات</a></li>
+          <li><a href="contact.html">الدعم الفني</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>تواصل معنا</h3>
+        <p>مسقط، سلطنة عمان</p>
+        <p>البريد الإلكتروني: info@auraart.om</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aura Art. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/supabase-client.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
